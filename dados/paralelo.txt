@@ -1,0 +1,26 @@
+======================================================================
+TESTE DE PARALELISMO — Lei de Amdahl na prática
+======================================================================
+Núcleos físicos:  6
+Threads lógicas:  12
+Tarefas:          16 multiplicações de matrizes 800x800
+BLAS limitado a 1 thread por processo (env vars setadas no topo)
+======================================================================
+
+Threads   Tempo (s)      Speedup     Eficiência (%)    
+-------------------------------------------------------
+1         0.69           1.00        100.0             
+2         0.45           1.52        75.8              
+4         0.38           1.81        45.2              
+12        0.43           1.61        13.4              
+
+======================================================================
+OBSERVAÇÃO PEDAGÓGICA
+======================================================================
+Speedup ideal seria igual ao número de threads (escala linear).
+A queda de eficiência revela:
+  • Overhead de criação/sincronização de processos
+  • Disputa por cache L3 e largura de banda de RAM
+  • Threads lógicas (SMT/HyperThreading) NÃO equivalem a núcleos reais
+  • Lei de Amdahl: fração serial limita o ganho máximo
+======================================================================
