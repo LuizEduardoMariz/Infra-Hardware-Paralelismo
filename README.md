@@ -1,6 +1,6 @@
 # Infra-Hardware-Paralelismo
 
-# Infraestrutura de Hardware – Análise Experimental do Paralelismo em Arquiteturas Híbridas
+## Infraestrutura de Hardware – Análise Experimental do Paralelismo em Arquiteturas Híbridas
 
 ## Descrição
 
@@ -85,13 +85,11 @@ Infra-Hardware-Paralelismo/
 │   ├── interrupts_depois.txt
 │   └── interrupts_diff.txt
 │
-├── scripts/
-│   ├── teste_paralelismo.py
-│   ├── teste_paralelismo_repeticoes.py
-│   ├── teste_localidade.py
-│   └── workload_completo.py
-│
-└── .gitkeep
+└── scripts/
+    ├── teste_paralelismo.py
+    ├── teste_paralelismo_repeticoes.py
+    ├── teste_localidade.py
+    └── workload_completo.py
 ```
 
 ---
