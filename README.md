@@ -27,7 +27,7 @@ relatorio/
 Arquivo principal:
 
 ```text
-relatorio/RelatorioExpandido_InfraHardware.pdf
+relatorio/RelatorioExpandido_InfraHardware_LuizEduardo.pdf
 ```
 
 ---
